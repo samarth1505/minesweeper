@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100px;
+	color: black;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #202124;
+}
+
+.main-table-container {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	font-size: 35%;
+	font-family: 'Roboto Mono';
+}
+
+.main-table-container table {
+	width: 70%;
+	vertical-align: middle;
+	border-collapse: collapse;
+	border: solid 3px #efefef;
+	box-shadow: 0px 0px 7px 1px #efefef;
+	
+}
+
+.main-table-container table td {
+	border: solid 3px #efefef;
+	box-shadow: 0px 0px 3px #efefef inset;
+}
+
+.active-diff table td {
+	border-style: hidden;
+	box-shadow: none;
+	color: #efefef;
+}
+
+.active-diff table {
+	box-shadow: none;
+}
+
+.active-diff:hover {
+	box-shadow: 0px 0px 7px 1px #efefef inset;
+	transition: box-shadow 0.2s;
+}
+
+.active-diff:active {
+	box-shadow: 0px 0px 7px 3px #efefef inset;
+}
+
+img {
+	width: 100%;
+}
+
+.back:hover {
+	box-shadow: 0px 0px 15px #efefef inset;
+	transition: box-shadow 0.2s;
+}
+
+
+.back:active {
+	box-shadow: 0px 0px 30px #efefef inset;
+}
+
+.custom-container {
+	position: fixed;
+	z-index: 9999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto Mono';
+	font-size: 25%;
+	color: white;
+	width: 100%;
+	height: 100%;
+	user-select: none;
+}
+
+.custom-container table {
+	width: 25%;
+	border: solid 3px #efefef;
+	border-collapse: collapse;
+	box-shadow: 0px 0px 1px white;
+	text-align: center;
+}
+
+.custom-container td {
+	padding: 2% 5%;
+	
+}
+
+.back2 {
+	box-shadow: 0px 0px 3px #efefef inset;
+}
